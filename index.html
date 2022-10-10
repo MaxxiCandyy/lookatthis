@@ -17,6 +17,7 @@
     width:1000px;
     height:1000px;
     font-size:250px;
+     visibility:hidden;
    }
   </style>
 
@@ -24,13 +25,12 @@
 
 <body>
   <button onclick="changeText()" id="btn">Click Me!</button>
-  <div class="main"><img src=""></div>
+  <div class="main"><img src="307857372_830725608084680_6627559750820382597_n (2).jpg" alt="Image not found."></div>
   <!-- Project -->
   <script>
 function changeText(){
   let main = document.querySelector(".main")
-  main.textContent = "YOU'RE GAY - Max"
-  document.querySelector("#btn").style.visibility = "hidden";
+  document.querySelector("#btn").style.visibility = "visible";
 }
 </script>
 </body>
