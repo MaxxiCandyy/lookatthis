@@ -7,27 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>HTML</title>
-  
-  <!-- HTML -->
-  
-
-  <!-- Custom Styles -->
-  <style>
-   .main{
-    width:1000px;
-    height:1000px;
-     visibility:hidden;
-   }
-  </style>
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-  <button onclick="changeText()" id="btn">Click Me!</button>
-  <div class="main"><img src="calboy.jpg" alt="Image not found."></div>
+  <button id="btn" onclick="changeText()" >Click Me!</button>
+  <div class="main">
+    <img src="pictures/calboy.jpg" alt="Image not found.">
+  </div>
   <script>
 function changeText(){
-  let main = document.querySelector(".main")
   document.querySelector("#btn").style.visibility = "hidden";
   document.querySelector(".main").style.visibility = "visible";
 }
