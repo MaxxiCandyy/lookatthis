@@ -16,7 +16,6 @@
    .main{
     width:1000px;
     height:1000px;
-    font-size:250px;
      visibility:hidden;
    }
   </style>
@@ -30,7 +29,8 @@
   <script>
 function changeText(){
   let main = document.querySelector(".main")
-  document.querySelector("#btn").style.visibility = "visible";
+  document.querySelector("#btn").style.visibility = "hidden";
+  document.querySelector("#main").style.visibility = "visible";
 }
 </script>
 </body>
